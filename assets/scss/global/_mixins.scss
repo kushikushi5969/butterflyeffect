@@ -1,0 +1,41 @@
+/* Mixins */
+
+@use "sass:map";
+@use 'variables'as v;
+
+@mixin textPosition {
+  align-self: end;
+  line-height: 1;
+}
+
+@mixin grid-gap {
+  display: grid;
+  gap: v.$pixel;
+  line-height: 1;
+}
+
+/**
+* メディアクエリの呼び出し
+*
+* レスポンシブ対応のためのメディアクエリを呼び出します。
+* ブレイクポイントは _variavles.scss で設定して下さい。
+*
+* 【使用例】
+* @include g.mq() {
+*  font-size: 18px;
+* }
+*/
+
+@mixin mq($breakpoint: md, $max: min) {
+  @if ($max==max) {
+    @media (max-width: calc(#{map.get( v.$breakpoints, $breakpoint)} - 1px)) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: #{map.get( v.$breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}

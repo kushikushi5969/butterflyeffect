@@ -1,0 +1,11 @@
+/* ボタン */
+@use '../../global/' as g;
+
+.c-fade {
+
+  &__in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+}
+

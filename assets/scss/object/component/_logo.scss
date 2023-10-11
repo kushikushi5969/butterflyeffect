@@ -1,0 +1,26 @@
+/* ボタン */
+@use '../../global/' as g;
+
+.c-logo {
+
+  &--x {
+    height: 16px;
+    width: 16px;
+  }
+
+  &--instagram {
+    height: 17px;
+    width: 17px;
+  }
+
+  &--mail {
+    height: 16px;
+    width: 23px;
+  }
+
+  &--youtube {
+    height: 16px;
+    width: 24px;
+  }
+}
+
