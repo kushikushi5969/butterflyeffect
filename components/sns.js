@@ -4,7 +4,7 @@ function sns() {
 
   return (
     <section className="p-sns">
-      <iframe className="" src="https://www.youtube.com/embed/KXV01nwUV7s?si=LMgXFy2Ol61JAimA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe className="" src="https://www.youtube.com/embed/KXV01nwUV7s?si=LMgXFy2Ol61JAimA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       <ul className="p-sns__lists">
         <FadeInSnsList>
           <a href="https://twitter.com/sgtppppp">
