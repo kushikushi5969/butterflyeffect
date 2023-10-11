@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[liquid]": {
+    "editor.formatOnSave": true
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/styles"
+    }
+  ],
+  "editor.insertSpaces": true,
+  "liveServer.settings.port": 5501,
+}

@@ -1,0 +1,41 @@
+/* 変数 */
+
+/* 色 */
+$base          : #1D1D1B;
+$baseDark      : #3B3935;
+$baseDeep      : #716F6B;
+$baseMiddle    : #ACA9A4;
+$baseLight     : #D6D3CD;
+$basePale      : #EAE8E5;
+$baseBright    : #F7F6F4;
+$white         : #FFFFFF;
+
+$colors : (
+  'base'       : $base,
+  'baseDark'   : $baseDark,
+  'baseDeep'   : $baseDeep,
+  'baseMiddle' : $baseMiddle,
+  'baseLight'  : $baseLight,
+  'basePale'   : $basePale,
+  'baseBright' : $baseBright,
+  'white'      : $white,
+);
+
+/* フォント */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+$notoserif : 'Noto Serif JP', sans-serif;
+
+/* ブレイクポイント */
+$breakpoints: (
+  'xs' : 376px,
+  'sm' : 414px,
+  'sm2': 520px,
+  'md' : 768px,
+  'md2': 900px,
+  'lg' : 1024px,
+  'xl' : 1280px,
+  'xxl': 1440px
+) !default;
+
+/* 共通ピクセル数 */
+$pixel: ( 4, 8, 16, 24, 32, 40, 48 );

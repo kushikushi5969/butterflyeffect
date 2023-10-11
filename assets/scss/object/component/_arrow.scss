@@ -1,0 +1,14 @@
+/* ボタン */
+@use '../../global/' as g;
+
+.c-arrow {
+  position: relative;
+  border-bottom: 1px solid #fff;
+  padding: 0 5px 0 0;
+
+  span {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+

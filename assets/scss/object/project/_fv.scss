@@ -1,0 +1,25 @@
+/* コラム */
+@use '../../global/'as g;
+
+.p-fv {
+
+  #video-pc,
+  #video-sp {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #video-pc {
+    display: none;
+    
+    @include g.mq() {
+      display: block;
+    }
+  }
+
+  #video-sp {
+    @include g.mq() {
+      display: none;
+    }
+  }
+}
