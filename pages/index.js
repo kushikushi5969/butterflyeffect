@@ -12,7 +12,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>BUTTERFLY EFFECT</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-butterflyeffect.png" />
       </Head>
 
       <main className="l-lp">
