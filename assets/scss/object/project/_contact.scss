@@ -1,0 +1,142 @@
+/* コラム */
+@use '../../global/'as g;
+
+.p-contact {
+  display: grid;
+  gap: 39px;
+  grid-template-columns: 70px 3fr;
+
+  @media (min-width: 768px) {
+    gap: 50px;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  @media (min-width: 1000px) {
+    gap: 150px;
+  }
+
+  h1 {
+    width: 70px;
+
+    @media (min-width: 768px) {
+      width: 283px;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 60px 40px 60px 0;
+
+    @include g.mq() {
+      padding: 100px 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 20px;
+
+      @include g.mq() {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__breadcrumb {
+    color: #fff;
+    margin-bottom: 40px;
+
+    @include g.mq() {
+      margin-bottom: 50px;
+    }
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 38px;
+  }
+
+  &__form {
+    margin-top: 40px;
+    max-width: 280px;
+    width: 100%;
+
+    @include g.mq() {
+      margin-top: 50px;
+    }
+
+    input,
+    select {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 10px 14px;
+      width: 100%;
+
+      &::placeholder {
+        color: #b1b1b1;
+      }
+
+      &.p-contact__form__submit {
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 10px 0;
+        margin-top: 30px;
+
+        @include g.mq() {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    &__name {
+      display: inline-block;
+      &:first-of-type {
+        margin-right: 20px;
+      }
+
+      @include g.mq() {
+        max-width: 130px;
+      }
+    }
+
+    &__ticket {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 30px;
+      width: 100%;
+
+      select {
+        cursor: pointer;
+        max-width: 120px;
+        margin-bottom: unset;
+      }
+
+      &::after {
+        content: url("/image/arrow-select.svg");
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 90px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+      }
+    }
+    span {
+      margin-left: 14px;
+    }
+    p {
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+  }
+}
