@@ -1,6 +1,7 @@
 import FadeInTextInfo from "./fadeInTextInfo";
 
 function archive() {
+  const arrow = ">";
 
   return (
     <section className="p-information">
@@ -30,7 +31,7 @@ function archive() {
               2023年12月2日 18:00-19:00(土) / ¥2,500
             </FadeInTextInfo>
             <FadeInTextInfo>
-              <span className="small"><a className="c-link c-arrow" href="#contact">詳細・ご予約<span>＞</span></a></span>
+              <span className="small"><a className="c-link c-arrow" href="#contact">詳細・ご予約<span>{arrow}</span></a></span>
             </FadeInTextInfo>
           </div>
         </div>
