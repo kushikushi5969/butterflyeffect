@@ -1,4 +1,4 @@
-/* コラム */
+/* FV */
 @use '../../global/'as g;
 
 .p-fv {
@@ -11,7 +11,7 @@
 
   #video-pc {
     display: none;
-    
+
     @include g.mq() {
       display: block;
     }
