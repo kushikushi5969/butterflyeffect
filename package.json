@@ -19,5 +19,9 @@
   },
   "devDependencies": {
     "prisma": "^5.4.2"
-  }
+  },
+  "prisma": {
+    "seed": "node ./pages/api/seed.js"
+  },
+  "type": "module"
 }
