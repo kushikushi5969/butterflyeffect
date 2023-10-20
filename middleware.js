@@ -33,14 +33,13 @@ export function middleware(request) {
         headers: { 'WWW-Authenticate': 'Basic' },
       });
     }
-    return NextResponse.next();
-  }
-
-  if (!isAuthenticated(request)) {
-    return new NextResponse('Authentication required', {
-      status: 401,
-      headers: { 'WWW-Authenticate': 'Basic' },
-    });
+  } else {
+    if (!isAuthenticated(request)) {
+      return new NextResponse('Authentication required', {
+        status: 401,
+        headers: { 'WWW-Authenticate': 'Basic' },
+      });
+    }
   }
 
   return NextResponse.next();
