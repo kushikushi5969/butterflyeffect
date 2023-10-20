@@ -110,9 +110,10 @@ function Form() {
     return (
       <>
         <p className='p-contact__text'>2023年12月2日(土) 18:00-19:00</p>
-        <p className='p-contact__text'>登壇：Mai-kou / 吉田結美 (予定)</p>
+        <p className='p-contact__text'>登壇：Mai-kou / 茂木響平</p>
         <p className='p-contact__text'>チケット：¥2,500 (事前予約制/1ドリンク付き)</p>
-        <p className='p-contact__text'>お支払い方法：現金/Paypay(当日受付にてお支払い頂きます)</p>
+        <p className='p-contact__text'>お支払い方法：現金 / クレジットカード ( JCB / Diners Club / Discober / Visa / Master / Amex )/ QUICPay / iD / 交通系IC / PayPay</p>
+        <p className='p-contact__text'>※当日受付にてお支払い頂きます。<br />※現金は極力お釣りの出ないようにご協力頂けますと幸いです。</p>
         <form
           className='p-contact__form'
           onSubmit={handleSubmit}
