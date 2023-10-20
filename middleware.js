@@ -33,6 +33,7 @@ export function middleware(request) {
         headers: { 'WWW-Authenticate': 'Basic' },
       });
     }
+    return NextResponse.next();
   }
 
   if (!isAuthenticated(request)) {
