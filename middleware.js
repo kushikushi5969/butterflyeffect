@@ -25,7 +25,7 @@ const isAdminAuthorized = (request) => {
 };
 
 export function middleware(request) {
-  // /admin用
+  // admin用
   if (request.nextUrl.pathname.startsWith('/admin')) {
     if (!isAdminAuthorized(request)) {
       return new NextResponse('Authentication required for Admin', {
