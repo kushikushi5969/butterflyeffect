@@ -11,6 +11,9 @@ function Form() {
   const [nothings, setNothings] = useState(null);
   const router = useRouter();
 
+  const currentDateTime = new Date();
+  const targtetDateTime = new Date('2023/12/02 18:00:00');
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -88,7 +91,16 @@ function Form() {
     return <p>Error loading tickets: {error.message}</p>;
   }
 
-  if (nothings) {
+  if (currentDateTime > targtetDateTime) {
+    return (
+      <>
+        <p className='p-contact__text'>
+          トークイベントは終了いたしました。<br />
+          ご来場いただきありがとうございました。
+        </p>
+      </>
+    );
+  } else if (nothings) {
     return (
       <>
         <p className='p-contact__text'>
